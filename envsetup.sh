@@ -134,13 +134,13 @@ function setpaths()
 
     # The gcc toolchain does not exists for windows/cygwin. In this case, do not reference it.
     export ANDROID_EABI_TOOLCHAIN=
-    toolchaindir=toolchain/arm-linux-androideabi/bin
+    toolchaindir=toolchain/linaro/bin
     if [ -d "$prebuiltdir/$toolchaindir" ]; then
         export ANDROID_EABI_TOOLCHAIN=$prebuiltdir/$toolchaindir
     fi
 
     export ARM_EABI_TOOLCHAIN=
-    toolchaindir=toolchain/arm-eabi-4.4.3/bin
+    toolchaindir=toolchain/linaro/bin
     if [ -d "$prebuiltdir/$toolchaindir" ]; then
         export ARM_EABI_TOOLCHAIN=$prebuiltdir/$toolchaindir
     fi
